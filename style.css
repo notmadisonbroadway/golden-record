@@ -1,0 +1,29 @@
+
+body {
+    background-color: #000;
+    color: #39ff14;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(circle, #222 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+.container {
+    padding: 40px;
+    text-align: center;
+}
+a {
+    color: #39ff14;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-shadow: 0 0 5px #39ff14;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav li {
+    margin: 10px 0;
+}

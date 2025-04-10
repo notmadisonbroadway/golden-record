@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secret Diary</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function checkPassword() {
+            var pw = document.getElementById("pw").value;
+            if (pw === "apollo") {
+                document.getElementById("secret").style.display = "block";
+                document.getElementById("pw-entry").style.display = "none";
+            } else {
+                alert("Incorrect access code.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div id="pw-entry">
+            <p>Enter Access Code:</p>
+            <input type="password" id="pw" />
+            <button onclick="checkPassword()">Enter</button>
+        </div>
+        <div id="secret" style="display:none;">
+            <h2>Private Log // Hidden Emotions</h2>
+            <p>This is where your secret diary entries go...</p>
+        </div>
+    </div>
+</body>
+</html>
